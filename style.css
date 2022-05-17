@@ -74,9 +74,19 @@ body{
     .featured{
         background-color: cornflowerblue;
     }
+    
     nav ul li{
         display: inline;
+        /* padding: 0; */
+        padding-right: 92px;
+        /* margin-bottom: 0; */
     }
+
+    nav ul{
+        /* padding: 0px; */
+        text-align: center;
+    }
+
     .featured > h2{
         color: White;
     }
