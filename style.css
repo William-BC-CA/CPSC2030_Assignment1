@@ -18,4 +18,10 @@ nav ul li{
 nav a:link{
     text-decoration: none;
     color: hotpink;
+    background-color: lavenderblush;
+}
+
+.wrapper{
+    margin: auto;
+    max-width: 800px;
 }
