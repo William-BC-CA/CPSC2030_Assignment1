@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Sacramento&display=swap');
 h1{
     font-family: "Sacramento";
+    color: cornflowerblue;
 }
 
 h2{
@@ -24,4 +25,25 @@ nav a:link{
 .wrapper{
     margin: auto;
     max-width: 800px;
+    display: grid;
+    /* grid-template-columns: 1fr 4fr 100px; */
+    grid-template-columns: auto auto auto;
+    /* grid-template-rows: 100px 3fr 2fr; */
+    padding: 10px;
+}
+
+header{
+    grid-column: 1/4;
+    grid-row: 1/3;
+}
+
+.featured{
+    grid-column: 1/4;
+    grid-row: 3/3;
+}
+
+
+nav{
+    grid-column: 1/4;
+    grid-row: 2/3;
 }
