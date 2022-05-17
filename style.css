@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Sacramento&display=swap');
+h1{
+    font-family: "Sacramento";
+}
+
+h2{
+    font-family: "Poiret One";
+}
+
+.featured{
+    background-color: cornflowerblue;
+}
+
+nav ul li{
+    display:inline;
+}
+
+nav a:link{
+    text-decoration: none;
+    color: hotpink;
+}
