@@ -73,6 +73,7 @@ body{
     .wrapper{
         max-width: 1200px;
         margin: auto;
+        grid-template-rows: 300px auto auto;
     }
 
     .featured{
@@ -98,5 +99,20 @@ body{
 
     .featured > h2{
         color: White;
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: 840px 280px;
+    }
+
+    .gallery{
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    .featured{
+        grid-column: 2 / 2;
+        grid-row: 2/3;
     }
 }
