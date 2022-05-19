@@ -7,6 +7,7 @@ h1{
 
 h2{
     font-family: "Poiret One";
+    text-align: left;
 }
 
 nav ul li{
@@ -28,8 +29,8 @@ nav a:link{
 }
 
 img{
-    width: auto;
-    max-width: 100%;
+    width: 100%;
+    /* max-width: 100%; */
 }
 
 .wrapper{
@@ -57,6 +58,7 @@ img{
 
 nav{
     grid-row: 2 / 3;
+    font-family: "Poiret One";
     /* grid-column: 1/2;
     grid-row: 2/3; */
 }
@@ -79,10 +81,11 @@ body{
     .featured{
         background-color: cornflowerblue;
     }
+    
 
-    h1{
+    /* h1{
 
-    }
+    } */
 
     nav ul li{
         display: inline-block;
@@ -103,19 +106,62 @@ body{
 
     main{
         display: grid;
-        grid-template-columns: 840px 280px;
+        grid-template-columns: 3fr 1fr;
     }
 
     .gallery{
+        padding: 15px;
         grid-column: 1 / 2;
         grid-row: 2 / 3;
         text-align: center;
-        border: 1px dashed black;
+        border: 1px dashed hotpink;
         margin-right: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1rem; /* https://developer.mozilla.org/en-US/docs/Web/CSS/gap */
+        background-color: white;
     }
 
     .featured{
         grid-column: 2 / 2;
-        grid-row: 2/3;
+        grid-row: 2 / 3;
+    }
+    
+    h2{
+        grid-template-rows: min-content;
+        grid-auto-rows: 150px;
+        /* grid-column: 30%; */
+        grid-column: 1 / 4;
+    }
+
+    .gallery img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover; /* https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit */
+    }
+
+    .gallery img:first-of-type{
+        /* grid-column: 2 / 2;
+        grid-row: 2 / 2; */
+        grid-column: 1 / span 2;
+        grid-row: 2 / span 2;
+        /* grid-column: 2 / 4; */
+    }
+
+    .featured img{
+        padding: 15px;
+        height: 150px;
+        object-fit: cover;
+        border: 5px solid white;
+        box-sizing: border-box;
+    }
+
+    .featured img{
+        /* border: 1px solid white; */
+        box-sizing: 10px;
+    }
+
+    nav ul{
+        grid-template-columns: repeat(5, 1fr);
     }
 }
