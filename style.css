@@ -9,6 +9,7 @@ h1{
 h2{
     font-family: "Poiret One";
     text-align: left;
+    font-weight: normal;
 }
 
 nav ul li{
@@ -94,11 +95,12 @@ body{
         /* padding-left: 83px; */
         /* padding-right: 83px; */
         /* margin-bottom: 0; */
-        border-right: 15px solid White;
-        /* border-left: 5px solid White; */
-        /* margin-right: 10px; */
-        /* padding-left: 10px;
-        padding-right: 10px; */
+        border-left: 7px solid White;
+        border-right: 7px solid White;
+        /* margin-right: 20px; */
+        /* margin-left: 10px; */
+        /* padding-left: 10px; */
+        /* padding-right: 10px; */
         /* margin-left: 25px; */
         /* padding-right: 5px; */
         /* padding-bottom: 15px; */
@@ -109,7 +111,8 @@ body{
         text-align: center;
         display: grid;
         grid-template-columns: repeat(5, 1fr);
-        width: 100%;
+        /* margin-left: 10px; */
+        /* width: 100%; */
     }
 
     .featured > h2{
@@ -132,6 +135,7 @@ body{
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 1rem; /* https://developer.mozilla.org/en-US/docs/Web/CSS/gap */
         background-color: white;
+        /* max-height: 100%; */
     }
 
     .featured{
@@ -151,6 +155,7 @@ body{
 
     .gallery img{
         height: 100%;
+        /* height: 150px; */
         width: 100%;
         object-fit: cover; /* https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit */
     }
@@ -158,6 +163,8 @@ body{
     .gallery img:first-of-type{
         /* grid-column: 2 / 2;
         grid-row: 2 / 2; */
+        height: 100%;
+        /* height: 300px; */
         grid-column: 1 / span 2;
         grid-row: 2 / span 2;
         /* grid-column: 2 / 4; */
@@ -169,6 +176,7 @@ body{
         object-fit: cover;
         border: 5px solid white;
         box-sizing: border-box;
+        margin-bottom: 10px;
     }
 
     .featured img{
