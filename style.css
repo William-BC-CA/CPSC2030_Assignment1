@@ -73,7 +73,14 @@ body{
     background-image: url("images/inspiration-geometry.png");
 }
 
+header {
+    height: 250px;
+}
+
 @media only screen and (min-width: 800px){
+    header{
+        height: 300px;
+    }
     .wrapper{
         max-width: 1200px;
         margin: auto;
